@@ -1,7 +1,7 @@
 # SPI Controller Verilog Module
 
 ## Overview
-This Verilog module implements a simple Serial Peripheral Interface (SPI) controller. It is designed for FPGA implementation, specifically targeting the Zynq platform. The module allows for the serial transmission of 8-bit data using a provided clock signal ( SPI is a synchronous serial communication protocol commonly used for communication between devices in embedded systems).
+This Verilog module implements a simple Serial Peripheral Interface (SPI) controller. It is designed for FPGA implementation, specifically targeting the Zynq platform. The module allows for the serial transmission of 8-bit data using a provided clock signal (SPI is a synchronous serial communication protocol commonly used for communication between devices in embedded systems).
 
 ## Module Details
 
