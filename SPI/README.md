@@ -1,4 +1,4 @@
-# SPI Controller Verilog Module (Zedboard)
+# SPI (Serial Peripheral Interface) Controller Verilog Module (Zedboard)
 
 ## Overview
 This Verilog module implements a simple Serial Peripheral Interface (SPI) controller. It is designed for FPGA implementation, specifically targeting the Zynq platform. The module allows for the serial transmission of 8-bit data using a provided clock signal (SPI is a synchronous serial communication protocol commonly used for communication between devices in embedded systems).
@@ -41,7 +41,3 @@ The module supports asynchronous reset. When the reset signal is asserted, the s
 
 ## Usage
 Instantiate the `spiControl` module in your FPGA design, connecting the appropriate signals based on the provided interface.
-
-## Notes
-- Ensure proper clock and reset signals are provided for correct operation.
-- Adjust the SPI clock frequency based on the desired communication speed.
