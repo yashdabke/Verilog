@@ -1,5 +1,7 @@
 `timescale 1ns / 1ps
 
+//N bit multiplier in Verilog using the double dabble method of converting binary numbers to binary-coded decimal(BCD)
+
 module mul(
 		out, a_in, b_in, clk, start, reset, finish, bcd
 	);
