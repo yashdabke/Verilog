@@ -1,7 +1,5 @@
 /*
  * mergeTest.c
- *
- *  Created on: Mar 21, 2020
  *      Author: yash
  */
 
