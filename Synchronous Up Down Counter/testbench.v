@@ -1,4 +1,4 @@
-module tb_counter;
+module tb;
 
     // Inputs
     reg Clk;
@@ -9,7 +9,7 @@ module tb_counter;
     wire [3:0] Count;
 
     // Instantiate the Unit Under Test (UUT)
-    upordown_counter uut (
+    up_down_counter uut (
         .Clk(Clk), 
         .reset(reset), 
         .UpOrDown(UpOrDown), 
