@@ -1,13 +1,22 @@
 `timescale 1ns / 1ps
-    module jk_ff ( input j, input k, input clk, output q);  
-      
-       reg q;  
-      
-       always @ (posedge clk)  
-          case ({j,k})  
-             2'b00 :  q <= q;  
-             2'b01 :  q <= 0;  
-             2'b10 :  q <= 1;  
-             2'b11 :  q <= ~q;  
-          endcase  
-    endmodule  
+module jk_flipflop(j,k,clk,reset,Q,Q_bar);
+input j,k,clk,reset;
+output reg Q,Q_bar;
+
+    always@(posedge clk)
+          begin
+            if({reset})
+            {Q,Q_bar}<={1'b0,1'b1};
+
+            else
+                begin
+                case({j,k})
+                2'b00:{Q,Q_bar}<={Q,Q_bar};
+                2'b01:{Q,Q_bar}<={1'b0,1'b1};
+                2'b10:{Q,Q_bar}<={1'b1,1'b0};
+                2'b11:{Q,Q_bar}<={~Q,Q};
+                default:begin end
+                endcase
+         end          
+end
+endmodule
